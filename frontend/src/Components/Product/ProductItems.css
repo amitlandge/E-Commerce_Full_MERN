@@ -1,0 +1,28 @@
+.product-cart {
+  width: 15vmax;
+  text-decoration: none !important;
+  color: rgb(58, 54, 54);
+  transition: all ease-in-out 0.4s;
+ 
+}
+.product-cart * {
+  margin: 0%;
+  padding: 0%;
+}
+.product-cart:hover{
+  transform: scale(1.1);
+
+}
+.product-cart * {
+  padding: 0.4vmax 0vmax;
+}
+.product-cart > h1 {
+  font-size: 1.5vmax;
+}
+.product-cart > h4 {
+  color: orangered;
+}
+.product-cart > img {
+  width: 13vmax;
+}
+

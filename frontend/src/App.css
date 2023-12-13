@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+.searchBar {
+  width: 25vmax;
+}
+.searchBar > input {
+  width: 15vmax;
+}
+.searchBar > button {
+  width: 5vmax;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.search {
+  color: aliceblue;
+}
+.search-form {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input {
+  width: 40vmax;
+  padding: 1vmax;
+  border: 3px solid #1976d2;
+  border-radius: 5px 0px 0px 5px;
+}
+.search-form > button {
+  width: 10vmax;
+  padding: 0.9vmax;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  background-color: #1976d2;
+  color: aliceblue;
+  cursor: pointer;
+}
+.profile-image > img {
+  width: 10vmax;
+  height: 10vmax;
+  border-radius: 60%;
+}
+.progress-bar {
+  width: 80vw;
+  margin: 2% auto;
+}
+/* .progress{
+  display: flex;
+  flex-direction: column;
+} */
+.paymentSuccess {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmax;
+}
+.success > i {
+  font-size: 5vmax;
+  color: green;
+}
+
+input {
+  padding-left: 3vmax !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 3vmax;
+}
+h2 {
+  font-size: 2vmax;
+}
+h3 {
+  font-size: 1.5vmax;
+}
+
+@media screen and (max-width: 650px) {
+  .res-bar {
+    width: 100vw;
+    flex-direction: column;
+  }
+}

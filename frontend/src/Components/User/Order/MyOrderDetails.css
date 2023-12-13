@@ -1,0 +1,13 @@
+.orderDtailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80vw;
+  margin: 0% auto;
+  gap: 2vmax;
+}
+
+.orderDtailsContainer > div > * {
+  margin-top: 1vmax;
+}

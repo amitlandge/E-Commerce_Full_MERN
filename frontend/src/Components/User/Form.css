@@ -1,0 +1,80 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:ital@0;1&display=swap"); */
+
+.form {
+  width: 40vmax;
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmax;
+  /* background-color: #6394c5; */
+  margin: 3% auto;
+  /* color: aliceblue; */
+  border-radius: 1vmax;
+  padding: 2vmax 0vmax;
+  font-family: "Sometype Mono", monospace;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+form > div > input {
+  width: 30vmax;
+  /* padding: 0.8vmax 2vmax; */
+  padding-left: 5vmax;
+  border: none;
+  border-radius: 0.2vmax;
+  font-family: "Sometype Mono", monospace;
+  font-weight: 600;
+}
+form > div > span {
+  font-size: 1vmax;
+  margin: 2% 0%;
+  font-family: "Sometype Mono", monospace;
+}
+form > button {
+  padding: 0.5vmax 1vmax;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.invalid > input {
+  border: 2px solid red;
+}
+.invalid > span {
+  color: red;
+}
+
+form > h1 {
+  font-size: 3vmax;
+}
+.profile-picture {
+  padding: 0.6vmax 1vmax;
+  background-color: aliceblue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.uploaded-image {
+  width: 14vmax;
+  border-radius: 5px;
+}
+.forgot-password {
+  background-color: aliceblue;
+  padding: 0.6vmax 1vmax;
+  border-radius: 5px;
+  width: 12vmax;
+  justify-self: right;
+  margin-right: 4vmax;
+  align-self: flex-end;
+}
+form > input {
+  width: 30vmax;
+  padding: 0.8vmax 2vmax;
+  border: none;
+  border-radius: 0.2vmax;
+  font-family: "Sometype Mono", monospace;
+  font-weight: 600;
+}
