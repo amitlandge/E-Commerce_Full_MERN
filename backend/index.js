@@ -1,13 +1,14 @@
 const app = require("./app");
-require("dotenv").config();
 const cloudinary = require("cloudinary");
 cloudinary.v2.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
   api_secret: process.env.API_SECRET,
 });
-// if (process.env.PRODUCTION !== "PRODUCTION") {
-// }
+if (process.env.NODE_PRODUCTION !== "PRODUCTION") {
+  require("dotenv").config();
+
+}
 app.listen(process.env.PORT, () => {
   console.log(`Server is Running in PORT ${process.env.PORT}`);
 });

@@ -1,5 +1,5 @@
 const express = require("express");
-require("dotenv").config();
+
 const app = express();
 const path = require("path");
 const productRoutes = require("./routes/productRoutes");
@@ -12,8 +12,9 @@ const db = require("./Database/db");
 const cookieParser = require("cookie-parser");
 const errorMiddleware = require("./middleware/error");
 // Database Connection
-// if (process.env.PRODUCTION !== "PRODUCTION") {
-// }
+if (process.env.NODE_PRODUCTION !== "PRODUCTION") {
+  require("dotenv").config();
+}
 db();
 // middleware
 app.use(express.json());
