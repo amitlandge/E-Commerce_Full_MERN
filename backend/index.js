@@ -7,7 +7,6 @@ cloudinary.v2.config({
 });
 if (process.env.NODE_PRODUCTION !== "PRODUCTION") {
   require("dotenv").config();
-
 }
 app.listen(process.env.PORT, () => {
   console.log(`Server is Running in PORT ${process.env.PORT}`);

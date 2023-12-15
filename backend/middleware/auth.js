@@ -12,9 +12,9 @@ const auth = async (req, res, next) => {
     req.user = userExist;
     next();
   } catch (error) {
-    res.status(400).json({
-      message: error.message,
-    });
+    // res.status(400).json({
+    //   message: error.message,
+    // });
   }
 };
 module.exports = auth;

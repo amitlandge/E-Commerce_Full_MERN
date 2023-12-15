@@ -26,17 +26,25 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
 // Routes
 app.use("/api/v1/", productRoutes);
 app.use("/api/v1/", userRoutes);
 app.use("/api/v1/", orderRoutes);
 app.use("/api/v1/", paymentRoutes);
-module.exports = app;
 
-app.use("/auth/", userRoutes);
-app.use("/order/", orderRoutes);
-app.use("/payment/", paymentRoutes);
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.get("*", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.sendFile(
+    path.resolve(__dirname, "../frontend/build/index.html"),
+    (err) => {
+      console.log(err);
+      res.status(400).json({
+        message: err,
+      });
+    }
+  );
+  res.setHeader("Content-Type", "text/html");
+});
+
+module.exports = app;
