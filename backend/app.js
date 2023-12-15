@@ -34,9 +34,9 @@ app.use("/api/v1/", paymentRoutes);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 app.get("*", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
+  res.setHeader("Content-Type", "application/json");
   res.sendFile(path.resolve(__dirname, "build", "index.html"));
-  // res.setHeader("Content-Type", "text/html");
+  res.setHeader("Content-Type", "text/html");
 });
 
 module.exports = app;
