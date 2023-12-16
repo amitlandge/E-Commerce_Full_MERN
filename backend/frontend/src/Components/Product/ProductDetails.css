@@ -1,0 +1,123 @@
+.productDetails-container {
+  width: 100vw;
+  /* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10vmax;
+  margin-top: 10vmax;
+}
+
+.left-container {
+  width: 25vmax;
+}
+/* .image-container {
+  width: 20vmax;
+  height: 80vh;
+} */
+.carouselImage {
+  width: 30vmax;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-image {
+  width: 25vmax;
+  height: 60vh;
+}
+.right-container {
+  align-self: flex-start;
+}
+.amount-buttons > input {
+  width: 2vmax;
+  padding: 3px;
+  border: none;
+  text-align: center;
+}
+.amount-buttons > button {
+  width: 2vmax;
+  padding: 3px;
+  background-color: gray;
+  color: aliceblue;
+  border: none;
+  border-radius: 2px;
+}
+
+.cartBtn {
+  padding: 0.4vmax 1vmax;
+  border-radius: 1.5vmax;
+  border: none;
+  background-color: orangered;
+  margin-top: 1vmax;
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+}
+.cartBtn:hover {
+  border: none;
+}
+.stock-status {
+  font-size: 1.2vmax;
+  margin: 1vmax 0vmax;
+}
+.review-container > h1 {
+  text-align: center;
+  width: 30vmax;
+  font-size: 3vmax;
+  margin: 0% auto;
+  padding: 1vmax;
+  border-bottom: 2px solid gray;
+}
+.reviews {
+  width: 100vw;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  gap: 10vmax;
+}
+.user-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vmax;
+  border: 1px solid rgb(83, 79, 79);
+  margin: 2% 0%;
+  width: 25vmax;
+}
+.user-review > img {
+  width: 10vmax;
+}
+.user-review-content > h1 {
+  font-size: 1.6vmax;
+}
+.user-review-content > p {
+  font-size: 1vmax;
+}
+button {
+  cursor: pointer;
+}
+.reviewsec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vmax;
+}
+@media screen and (max-width: 700px) {
+  .left-container {
+    width: 80vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container {
+    width: 60vmax;
+    height: 50vh;
+  }
+  .carouselImage {
+    width: 50vmax;
+  }
+}

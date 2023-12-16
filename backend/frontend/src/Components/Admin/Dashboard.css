@@ -1,0 +1,64 @@
+.listItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dashboard_container {
+  text-align: center;
+}
+.dashboard_container > h2 {
+  margin: 3% auto;
+}
+.totalAmount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1976d2;
+  color: aliceblue;
+  padding: 1vmax;
+}
+.data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vmax;
+}
+.totalUser,
+.totalOrders,
+.totalProduct {
+  width: 15vmax;
+  height: 15vmax;
+  background-color: #1976d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  border-radius: 50%;
+}
+.chart {
+  width: 70vw;
+  margin: 3% auto;
+}
+
+.doughnut {
+  width: 50vw;
+  margin: 3% auto;
+}
+
+.listItem > * {
+  color: rgb(45, 43, 43);
+  margin-left: 1vmax;
+  text-decoration: none;
+}
+.preview {
+  display: flex;
+  flex-direction: row;
+  gap: 2vmax;
+}
+.preview > img {
+  width: 10vmax;
+  height: 10vmax;
+  border-radius: 50%;
+}

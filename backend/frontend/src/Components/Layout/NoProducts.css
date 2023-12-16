@@ -1,0 +1,16 @@
+.no-product {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmax;
+}
+.no-product > i {
+  color: green;
+  font-size: 4vmax;
+}
+.no-product > h1 {
+  font-size: 4vmax;
+}
